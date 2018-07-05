@@ -2,11 +2,11 @@
 #include <sys/syscall.h>
 
 #ifndef DOCKER_IMAGE
-	#define DOCKER_IMAGE "hello-world"
+	#define DOCKER_IMAGE "hello-sap-jupyter"
 #endif
 
 #ifndef DOCKER_GREETING
-	#define DOCKER_GREETING "Hello from Docker!"
+	#define DOCKER_GREETING "Hello SAP BDS Jupyter!"
 #endif
 
 #ifndef DOCKER_ARCH
