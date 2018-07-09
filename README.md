@@ -28,7 +28,7 @@ hello-sap-jupyter                                                     build     
 hello-sap-jupyter                                                     test-hello-world    db659293db77        17 minutes ago      1.86 kB
 ```
 Publishing the image to internal repository. Keep in mind that we will only have one tag `linux`
-here and won't be maintaining multiple tars for different architecture. IF you want to support
+here and won't be maintaining multiple tags for different architecture. IF you want to support
 a different type of architecture, you will need to extend the build process, etc.
 ```
 # Delete the build environment so you don't publish the incorrect image
@@ -38,3 +38,6 @@ docker push docker-dev.artifactory.service.altiscale.com/hello-sap-jupyter:linux
 docker tag hello-sap-jupyter:test-hello-world docker-dev.artifactory.service.altiscale.com/hello-sap-jupyter:latest
 docker push docker-dev.artifactory.service.altiscale.com/hello-sap-jupyter:latest
 ```
+
+To publish to production, this is a manual step today and requires escalated privilege to do so.
+Please contact your admin.
